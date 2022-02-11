@@ -1,0 +1,48 @@
+/*  сброс отступов   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* шапка */
+.header {
+    height: 50px;
+    background-color: #8f8f8f; /* подкрасил фон для наглядности */
+}
+
+/* обёртка для колонки с пользователями и сообщениями */
+.wrapper {
+    display: flex;
+}
+
+/* колонка с пользователями */
+.aside {
+    height: calc(100vh - 50px - 100px); /* вычисляем высоту от окна */
+    width: 200px;
+    overflow-y: auto; /* прокрутка по вертикали */
+    background-color: #f1fc5e;  /* подкрасил фон для наглядности */
+}
+
+/* окно с сообщениями */
+.main {
+    height: calc(100vh - 50px - 100px);  /* вычисляем высоту от окна */
+    width: 100%;
+    overflow-y: auto;  /* прокрутка по вертикали */
+}
+
+/* подвал */
+.footer {
+    height: 100px;
+    background-color: #8f8f8f;  /* подкрасил фон для наглядности */
+}
+
+
+/* что бы от текста из глаз кровь не шла, 
+добавил минимальную стилизация сообщениям и пользователям */
+.message, .user {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #8f8f8f;
+    border-radius: 20px;
+}
